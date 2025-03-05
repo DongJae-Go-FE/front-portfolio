@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --black-overlay-00: rgba(0, 0, 0, 0);
+  --black-overlay-75: rgba(0, 0, 0, 0.75);
+  --black-overlay-80: rgba(0, 0, 0, 0.8);
+  --black-overlay-100: rgba(0, 0, 0, 1);
+
+  --white-overlay-10: rgba(255, 255, 255, 0.1);
+  --white-overlay-50: rgba(255, 255, 255, 0.5);
+
+  --signature-blue-01: #b1b5f8;
+  --signature-blue-02: #e5ecff;
+  --signature-blue-03: #56adff;
+  --signature-blue-04: #5170d6;
+
+  --signature-purple-01: #a98fff;
+  --signature-purple-02: #8470ff;
+  --signature-purple-03: #7e76ff;
+  --signature-purple-04: #a8c5ff;
+
+  --sub-font: "Pretendard";
+
+
+
+  --shadow-color: 208deg 22% 58%;
+  --shadow-elevation-low:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../asset/font/albert-sans-v1-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../asset/font/PretendardVariable.woff2") format("woff2");
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leftTopGo {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-12vw, -30vh);
+  }
+}
+
+@keyframes rightBottomGo {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(12vw, 30vh);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes bottomUp {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+html, body {margin: 0; padding: 0;}
+body * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Albert Sans", "Pretendard", sans-serif;}
+
+:is(ul) {list-style: none;}
+:is(a) {text-decoration: none;}
+:is(strong) {font-weight: bold;}
