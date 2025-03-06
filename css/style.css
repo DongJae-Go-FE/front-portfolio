@@ -6,6 +6,8 @@
     color: var( --color-white); -webkit-text-fill-color: var(--black-overlay-00);}
 .signature-color-purple{background-image: linear-gradient(to bottom, var(--signature-purple-01), var(--signature-purple-02), var(--signature-purple-03)), linear-gradient(to top, var( --color-white), var( --color-white)); color: var(--signature-purple-04); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: var(--black-overlay-00);}
 
+.sub-title{display: inline-block; position: relative; font-size: 14px; font-weight: 500;}
+.sub-title::before{content: ""; display: block; width: 5px; height: 5px; position: absolute; top: 50%; left: -15px; transform: translateY(-50%); background-color: var(--color-white); border-radius: 5px;}
 
 #header{display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 1rem 2rem; position: fixed; top: 0; left: 0; z-index: 1001; background-color: transparent; color: var( --color-white);} 
 
@@ -46,8 +48,7 @@
 #section02{display: flex; flex-direction: column; gap:120px 0; padding: 10dvw 5dvw; background-color: var(--color-black);}
 
 #section02 .text-box{padding-inline: 4dvw; text-align: right; color: var(--color-white);}
-#section02 .text-box h2{display: inline-block; margin-bottom: 45px; position: relative; font-size: 14px; font-weight: 500;}
-#section02 .text-box h2::before{content: ""; display: block; width: 5px; height: 5px; position: absolute; top: 50%; left: -15px; transform: translateY(-50%); background-color: var(--color-white); border-radius: 5px;}
+#section02 .text-box .sub-title{margin-bottom: 25px;}
 #section02 .text-box p{font-size: 19px; font-weight: 100;}
 
 #section02 .list-box{width: 80%; color: var(--color-white); border-top: 1px solid var(--white-overlay-50); border-bottom: 1px solid var(--white-overlay-50);}
@@ -63,9 +64,14 @@
 #section03 .text-box{position: sticky; top: 10dvw; color: var(--color-white);}
 #section03 .text-box h2{font-size: 5vw;}
 
-#section03 .content-box{display: flex; flex-direction: column; gap: 7vw 0; padding: 20dvw 0 40dvw 30dvw;  position: sticky; top: 0;}
-#section03 .content-box li{width: 36vw; height: clamp(250px,17vw,293px); border: 1px solid var(--white-overlay-10); background-color: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border-radius: 16px;}
-#section03 .content-box li:nth-child(even){align-self: end;}
+#section03 .company-box{display: flex; flex-direction: column; gap: 7vw 0; padding: 20dvw 0 40dvw 30dvw;  position: sticky; top: 0;}
+#section03 .company-box .company{display: flex; flex-direction: column; justify-content: space-between; width: 36vw; height: clamp(250px,17vw,293px); padding: 3vw; border: 1px solid var(--white-overlay-10); background-color: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border-radius: 16px; color: var(--color-white);}
+#section03 .company-box .company:nth-child(even){align-self: end;}
+.company h3{display: flex; align-items: flex-end; gap: 0 8px; margin-bottom: 16px; font-size: clamp(20px,2vw,32px); font-family: var(--sub-font);}
+.company h3 span{position: relative; top: -5px; font-size: clamp(12px,0.9vw,14px)}
+.company p{font-size: clamp(14px,1.5vw,19px); color: var(--gray-overlay-80);}
+.company .count{display: flex; justify-content: flex-end; align-items: flex-end; color: var(--white-overlay-20); font-size: clamp(18px,2vw,24px);}
+.company .count span{padding-right: 4px; position: relative; top: 0.1vw; color: var(--color-white); font-size: clamp(24px,4vw,40px);}
 
 #section04{align-content: center;}
 
@@ -99,10 +105,12 @@
 #section06 .profile-container h3, #section06 .profile-container p {overflow: hidden; display: block; width: 0; transition: width 0.5s; white-space: nowrap; }
 #section06 .profile-container h3{font-size: clamp(28px,3vw,51.8px);}
 #section06 .profile-container p{font-size:clamp(24px,2vw,34px);}
-#section06 .profile-container .image-box{display: flex; flex-direction: column; width:25vw; height: 50vh; padding: 2vw; margin-left: auto; border: solid 1px var(--white-overlay-10); border-radius: 16px; background-image: linear-gradient(to top, #141414, #242831); transform: translateY(100%); opacity: 0; visibility: hidden;}
+#section06 .profile-container .image-box{display: flex; flex-direction: column; width:25vw; padding: clamp(24px,2vw,37px); margin-left: auto; border: solid 1px var(--white-overlay-10); border-radius: 16px; background-image: linear-gradient(to top, #141414, #242831); transform: translateY(100%); opacity: 0; visibility: hidden;}
 #section06 .profile-container.on h3, #section06 .profile-container.on p{width: 100%;}
 #section06 .profile-container.on .image-box{animation: bottomUp 0.7s ease forwards; visibility: visible;}
-.image-box ul{display: flex; gap: 0 16px; margin-top: auto;}
+
+.image-box img{width: 100%; aspect-ratio: 0.8/1;}
+.image-box ul{display: flex; gap: 0 16px; margin-top: 20px;}
 .image-box ul li {flex:1;}
 .image-box ul li .button{width: 100%; max-width: 100%;}
 
@@ -116,8 +124,8 @@
 
 
 @media (width < 1080px) {
-    #section03 .content-box {gap: 3vw 0; padding:10dvw 0 0 0;}
-    #section03 .content-box li{width: 100%;}
+    #section03 .company-box {gap: 3vw 0; padding:10dvw 0 0 0;}
+    #section03 .company-box .company{width: 100%;}
 
     #section06 {height: auto;}
     #section06 .profile-container{flex-direction: column; gap: 4vw 0;}

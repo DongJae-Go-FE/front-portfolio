@@ -10,7 +10,10 @@
   --black-overlay-100: rgba(0, 0, 0, 1);
 
   --white-overlay-10: rgba(255, 255, 255, 0.1);
+  --white-overlay-20: rgba(255, 255, 255, 0.2);
   --white-overlay-50: rgba(255, 255, 255, 0.5);
+
+  --gray-overlay-80: rgba(227, 227, 227, .8);
 
   --signature-blue-01: #b1b5f8;
   --signature-blue-02: #e5ecff;
