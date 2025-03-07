@@ -4,7 +4,7 @@ const optionsArray = [
   { threshold: 0.2, targetId: "target3" },
   { threshold: 0.9, targetId: "target4" },
   { threshold: 0.2, targetId: "section06" },
-  { threshold: 0.5, targetId: "target5" },
+  { threshold: 0.2, targetId: "target5" },
 ];
 
 const createObserver = (options) => {
