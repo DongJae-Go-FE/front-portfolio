@@ -55,12 +55,15 @@
 #section02 .text-box p{font-size: 19px; font-weight: 100;}
 
 #section02 .list-box{width: 80%; color: var(--color-white); border-top: 1px solid var(--white-overlay-50); border-bottom: 1px solid var(--white-overlay-50);}
-#section02 .list-box li{overflow: hidden; display: flex; gap: 0 20px;}
+#section02 .list-box li{overflow: hidden; display: flex; align-items: center; gap: 0 20px;}
 #section02 .list-box li:not(:last-of-type){border-bottom: 1px solid var(--white-overlay-50);}
 #section02 .list-box span{padding: 1dvw 0; transform: translateY(100%); font-size: 5vw; white-space: nowrap; transition: transform 0.5s;}
 #section02 .list-box span:hover{background-clip: text; background-image: linear-gradient(to left, var(--signature-blue-01), var(--signature-blue-02), var(--signature-blue-03), var(--signature-blue-04)), linear-gradient(to right, var( --color-white), var( --color-white));
     color:var(--color-white); -webkit-text-fill-color: var(--black-overlay-00);}
 #section02 .list-box.on li span{transform: translateY(0);}
+#section02 .list-box li div{overflow: hidden; width: 4vw; height: 4vw;}
+#section02 .list-box li img{width: 100%; height: 100%; transform: translateX(-100%);  transition: transform 0.7s;}
+#section02 .list-box.on li img{transform: translateX(0%);}
 
 #section03{background-image: url("../asset/image/bg01.webp"); background-repeat: no-repeat; background-attachment: fixed; background-position: center;}
 
