@@ -42,15 +42,15 @@ const calculateBounds = () => {
   const documentHeight = document.documentElement.scrollHeight;
   startOne = documentHeight * 0.65;
   endOne = documentHeight * 0.67;
-  startTwo = documentHeight * 0.67;
-  endTwo = documentHeight * 0.69;
+  startTwo = documentHeight * 0.68;
+  endTwo = documentHeight * 0.70;
   startThree = documentHeight * 0.71;
   endThree = documentHeight * 0.73;
-  startFour = documentHeight * 0.75;
+  startFour = documentHeight * 0.74;
   endFour = documentHeight * 0.76;
   startFive = documentHeight * 0.77;
-  endFive = documentHeight * 0.78;
-  startSix = documentHeight * 0.81;
+  endFive = documentHeight * 0.79;
+  startSix = documentHeight * 0.80;
   endSix = documentHeight * 0.82;
 };
 
