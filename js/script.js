@@ -50,8 +50,8 @@ const calculateBounds = () => {
   endFour = documentHeight * 0.76;
   startFive = documentHeight * 0.77;
   endFive = documentHeight * 0.78;
-  startSix = documentHeight * 0.79;
-  endSix = documentHeight * 0.80;
+  startSix = documentHeight * 0.81;
+  endSix = documentHeight * 0.82;
 };
 
 let isScrolling = false;
@@ -62,22 +62,22 @@ const handleScroll = () => {
     requestAnimationFrame(() => {
       const scrollY = window.scrollY;
       const sec03LiOne = document.querySelectorAll(
-        "#section05 .content-box li"
+        "#section05 .content-box > li"
       )[0];
       const sec03LiTwo = document.querySelectorAll(
-        "#section05 .content-box li"
+        "#section05 .content-box > li"
       )[1];
       const sec03LiThree = document.querySelectorAll(
-        "#section05 .content-box li"
+        "#section05 .content-box > li"
       )[2];
       const sec03LiFour = document.querySelectorAll(
-        "#section05 .content-box li"
+        "#section05 .content-box > li"
       )[3];
       const sec03LiFive = document.querySelectorAll(
-        "#section05 .content-box li"
+        "#section05 .content-box > li"
       )[4];
       const sec03LiSix = document.querySelectorAll(
-        "#section05 .content-box li"
+        "#section05 .content-box > li"
       )[5];
 
       let opacityOne, rotateXone, scaleOne;

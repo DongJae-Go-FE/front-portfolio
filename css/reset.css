@@ -136,7 +136,7 @@
 }
 
 
-html, body {margin: 0; padding: 0; animation: scrollHold 10s;}
+html, body {margin: 0; padding: 0; animation: scrollHold 5s;}
 body * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Albert Sans", "Pretendard", sans-serif;}
 
 :is(ul) {list-style: none;}
