@@ -86,9 +86,9 @@
 
 #section04 .text-box{width: 100%; color: var(--color-gray); font-size:clamp(18px,2vw,51.8px);}
 #section04 .text-box h2{ width: fit-content; margin: auto; position: relative;}
-#section04 .text-box h2 p { display: block; white-space: nowrap;}
-#section04 .text-box h2 p.text-white{overflow: hidden; width: 0; position: absolute; left: 0; top: 0; white-space: nowrap; transition: width .4s ease-in-out; color: var(--color-white);}
-#section04 .text-box.on h2 p.text-white{width: 100%;}
+#section04 .text-box h2 > span { display: block; white-space: nowrap;}
+#section04 .text-box h2 > span.text-white{overflow: hidden; width: 0; position: absolute; left: 0; top: 0; white-space: nowrap; transition: width .4s ease-in-out; color: var(--color-white);}
+#section04 .text-box.on h2 > span.text-white{width: 100%;}
 
 #section05{background-image: url("../asset/image/bg02.webp"); background-position: top; background-repeat: no-repeat; background-attachment: fixed;}
 #section05 h2{margin-bottom: 40px; color: var(--color-white); font-size: 4vw;}

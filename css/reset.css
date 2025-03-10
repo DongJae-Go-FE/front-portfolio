@@ -67,6 +67,15 @@
   src: url("../asset/font/PretendardVariable.woff2") format("woff2");
 }
 
+@keyframes scrollHold {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
+  }
+}
+
 @keyframes opacity {
   from {
     opacity: 0;
@@ -127,7 +136,7 @@
 }
 
 
-html, body {margin: 0; padding: 0;}
+html, body {margin: 0; padding: 0; animation: scrollHold 10s;}
 body * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Albert Sans", "Pretendard", sans-serif;}
 
 :is(ul) {list-style: none;}
