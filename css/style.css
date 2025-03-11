@@ -42,7 +42,7 @@
 #section01 .text-box{width: 100%; position: absolute; bottom: 10vh; color: var(--color-white);}
 #section01 .text-box .title{overflow: hidden; width: 100%; margin: 0 auto; background-color: var(--color-black);font-size: clamp(30px,4vw,80px); transition: overflow 0.5s; }
 #section01 .text-box h3{transition: transform 0.5s; transform: translateY(100%); text-align: center;}
-#section01 .text-box .title.on{overflow: auto;}
+/* #section01 .text-box .title.on{overflow: auto;} */
 #section01 .text-box .title.on h3{transform: translateY(0);}
 #section01 .text-box > .content{overflow: hidden; display: flex; justify-content: flex-start; align-items: flex-start;}
 #section01 .text-box > .content p{font-size: clamp(25px,4vw,69px);  transition: opacity 1s; opacity: 0; white-space: nowrap; animation: marquee 30s linear infinite;}
