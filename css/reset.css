@@ -69,10 +69,10 @@
 
 @keyframes scrollHold {
   from {
-    overflow: hidden;
+    overflow-y: hidden;
   }
   to {
-    overflow: auto;
+    overflow-y: auto;
   }
 }
 
