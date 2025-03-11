@@ -60,7 +60,7 @@
 #section02 .list-box span:hover{background-clip: text; background-image: linear-gradient(to left, var(--signature-blue-01), var(--signature-blue-02), var(--signature-blue-03), var(--signature-blue-04)), linear-gradient(to right, var( --color-white), var( --color-white));
     color:var(--color-white); -webkit-text-fill-color: var(--black-overlay-00);}
 #section02 .list-box.on li span{transform: translateY(0);}
-#section02 .list-box li div{overflow: hidden; width: 4vw; height: 4vw;}
+#section02 .list-box li div{overflow: hidden; width: 5vw; height: 5vw;}
 #section02 .list-box li img{width: 100%; height: 100%; transform: translateX(-100%);  transition: transform 0.7s;}
 #section02 .list-box.on li img{transform: translateX(0%);}
 
@@ -160,7 +160,7 @@
 @media (width < 768px) {
     #section02 .list-box{width: 100%;}
 
-    #section05 .content-box li {flex-wrap: wrap;  height: 100vw;}
+    #section05 .content-box li {flex-wrap: wrap;  height: 70vh;}
     #section05 .content-box li .image {width: 100%; margin: 0 auto; aspect-ratio: 1 / 0.7;}
     #section05 .content-box li .info{width: 100%;}
 
