@@ -21,7 +21,7 @@
 #footer a{margin-bottom: 10px; color: var(--color-white); font-weight: bold;}
 
 #main {width: 100dvw; height: 100dvh; position: relative;}
-#main video{width: 100%; height: 100%; object-fit: cover;}
+#main > img{width: 100%; height: 100%; object-fit: cover;}
 
 #main .main-text-area{display: flex; gap: 0 10px; z-index: 20; font-size: 4.5vw; letter-spacing: -1px; color: var(--color-white); animation: opacity 2s;}
 
@@ -55,7 +55,7 @@
 #section02 .text-box p{font-size: 19px; font-weight: 100;}
 
 #section02 .list-box{width: 80%; color: var(--color-white); border-top: 1px solid var(--white-overlay-50); border-bottom: 1px solid var(--white-overlay-50);}
-#section02 .list-box li{overflow: hidden; display: flex; align-items: center; gap: 0 20px;}
+#section02 .list-box li{overflow: hidden; display: flex; align-items: center; gap: 0 clamp(8px,2vw,20px);}
 #section02 .list-box li:not(:last-of-type){border-bottom: 1px solid var(--white-overlay-50);}
 #section02 .list-box span{padding: 1dvw 0; transform: translateY(100%); font-size: 5vw; white-space: nowrap; transition: transform 0.5s;}
 #section02 .list-box span:hover{background-clip: text; background-image: linear-gradient(to left, var(--signature-blue-01), var(--signature-blue-02), var(--signature-blue-03), var(--signature-blue-04)), linear-gradient(to right, var( --color-white), var( --color-white));
