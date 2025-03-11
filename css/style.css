@@ -162,7 +162,7 @@
     #section02 .list-box{width: 100%;}
 
     #section05 .content-box li {flex-wrap: wrap;  height: 100vw;}
-    #section05 .content-box li .image {width: 80%; margin: 0 auto; aspect-ratio: 1 / 0.7;}
+    #section05 .content-box li .image {width: 100%; margin: 0 auto; aspect-ratio: 1 / 0.7;}
     #section05 .content-box li .info{width: 100%;}
 
     #section06 .profile-container{gap: 6vw 0;}
