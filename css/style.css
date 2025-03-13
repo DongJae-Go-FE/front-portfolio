@@ -160,7 +160,7 @@
 @media (width < 768px) {
     #section02 .list-box{width: 100%;}
 
-    #section05 .content-box li {flex-wrap: wrap;  height: 70vh;}
+    #section05 .content-box li {flex-wrap: wrap;  height: 130vw; gap: 5vw 0;}
     #section05 .content-box li .image {width: 100%; margin: 0 auto; aspect-ratio: 1 / 0.7;}
     #section05 .content-box li .info{width: 100%;}
 
